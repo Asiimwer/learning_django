@@ -18,6 +18,6 @@ def student_list(request):
 def teachers_list(request):
     teachers = Teachers.objects.all()
     return render(request,'home/teachers.html',{'teachers': teachers})
-def create_student(request);
-    return HttpResponse("Create student")
+def create_student(request):
+    return render(request, 'home/create_student.html')
 # Create your views here.
